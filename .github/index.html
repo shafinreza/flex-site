@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FLEX — Performance Peanut Butter</title>
+    <meta
+      name="description"
+      content="FLEX performance peanut butter. 100% roasted peanuts. No palm oil. No added sugar. Built for training days and everyday fuel."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Social preview -->
+    <meta property="og:title" content="FLEX — Performance Peanut Butter" />
+    <meta
+      property="og:description"
+      content="Clean, performance-driven fuel. Roasted peanuts. No fillers. Just FLEX."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/jar.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="FLEX home">
+          <img class="brand-logo" src="assets/logo.png" alt="FLEX" />
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#products">Products</a>
+          <a href="#story">Story</a>
+          <a href="#faq">FAQ</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-outline" href="#where-to-buy">Where to buy</a>
+
+          <!-- Instagram icon next to Where to buy -->
+          <a
+            class="icon-btn"
+            href="https://instagram.com/eatflex.uk"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="FLEX on Instagram"
+            title="Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4Zm-4.5 4.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6Zm0 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM17.8 6.6a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8Z"
+              />
+            </svg>
+          </a>
+
+          <button class="burger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav" hidden>
+        <a href="#products">Products</a>
+        <a href="#story">Story</a>
+        <a href="#faq">FAQ</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-solid" href="#where-to-buy">Where to buy</a>
+        <a
+          class="btn btn-outline"
+          href="https://instagram.com/eatflex.uk"
+          target="_blank"
+          rel="noreferrer"
+          >Instagram</a
+        >
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="kicker">High performance nutrition</div>
+
+            <h1 class="hero-title">
+              FLEX YOUR<br />
+              LIMITS
+            </h1>
+
+            <p class="hero-sub">
+              Clean, performance-driven nutrition for people who grind.
+              <strong>Premium ingredients.</strong> No fillers. Just fuel.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#where-to-buy">Where to buy</a>
+              <a class="btn btn-ghost" href="#story">Our story →</a>
+            </div>
+
+            <p class="hero-micro">More products coming. Same standards.</p>
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <div class="jar-wrap">
+              <img class="jar" src="assets/jar.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature chips (one line desktop) -->
+      <section class="feature-row" aria-label="Key benefits">
+        <div class="container feature-grid">
+          <div class="feature-chip">
+            <div class="feature-title">100% PEANUTS</div>
+            <div class="feature-text">Roasted peanuts only. Nothing else.</div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-title">SUSTAINED ENERGY</div>
+            <div class="feature-text">Clean fats + protein for long sessions.</div>
+          </div>
+          <div class="feature-chip" id="where-to-buy">
+            <div class="feature-title">WHERE TO BUY</div>
+            <div class="feature-text">Launching on Amazon UK soon.</div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-title">NO ARTIFICIALS</div>
+            <div class="feature-text">No palm oil. No added sugar. No fillers.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="products" class="section">
+        <div class="container">
+          <h2 class="section-title">OUR PRODUCTS</h2>
+          <p class="section-lead">
+            We’re starting with one SKU — and making it flawless. More products are coming.
+          </p>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-media">
+                <img src="assets/jar.png" alt="FLEX Natural Peanut Butter — Smooth" />
+              </div>
+              <div class="product-body">
+                <h3>FLEX Natural Peanut Butter — Smooth</h3>
+
+                <ul class="specs">
+                  <li><strong>Ingredients:</strong> Roasted peanuts (100%)</li>
+                  <li><strong>Allergen info:</strong> Contains peanuts</li>
+                  <li>No palm oil • No added sugar</li>
+                  <li><strong>Protein:</strong> 132g per jar (approx.)</li>
+                </ul>
+
+                <div class="product-actions">
+                  <a class="btn btn-solid" href="#where-to-buy">Buy on Amazon (soon)</a>
+                  <span class="muted">Crunchy version coming after launch.</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Story -->
+      <section id="story" class="section section-alt">
+        <div class="container story-grid">
+          <div>
+            <h2 class="section-title">OUR STORY</h2>
+            <p class="story-text">
+              FLEX started with a simple belief: <strong>performance fuel should taste great.</strong>
+              We cut the noise and focused on what matters — quality ingredients and clean formulation.
+            </p>
+            <p class="story-text">
+              FLEX is a clean pantry staple built for training days and healthy kitchens.
+              No added sugar, no palm oil, no fillers — just roasted peanuts, ground smooth.
+            </p>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-number">132g</div>
+                <div class="stat-label">Protein per jar</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Roasted peanuts</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-side">
+            <div class="story-side-box">
+              <div class="pill">Coming soon</div>
+              <h3>More products. Same standards.</h3>
+              <p class="muted">
+                As we expand the range, every product stays clean, performance-driven,
+                and built around real ingredients.
+              </p>
+              <a class="btn btn-outline" href="#blog">Read updates in Blog</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <h2 class="section-title">FAQ</h2>
+
+          <div class="faq">
+            <details>
+              <summary>Is FLEX peanut butter vegan?</summary>
+              <p>Yes — it’s made from roasted peanuts only.</p>
+            </details>
+
+            <details>
+              <summary>Where can I purchase FLEX?</summary>
+              <p>We’re launching on Amazon UK soon. Follow Instagram for launch updates.</p>
+            </details>
+
+            <details>
+              <summary>What makes FLEX different?</summary>
+              <p>Clean formulation: no palm oil, no added sugar, no fillers. Built for performance.</p>
+            </details>
+
+            <details>
+              <summary>Does FLEX contain artificial sweeteners?</summary>
+              <p>No. No artificial sweeteners, no syrups, no fillers.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section id="blog" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">BLOG</h2>
+          <p class="section-lead">Training insights, nutrition, and product updates.</p>
+
+          <div class="blog-grid">
+            <article class="blog-card">
+              <h3>How to use peanut butter for performance</h3>
+              <p class="muted">Pre-workout, post-workout, and daily fuel — without the junk.</p>
+              <a href="#" class="text-link">Read more →</a>
+            </article>
+
+            <article class="blog-card">
+              <h3>Why we keep it 100% peanuts</h3>
+              <p class="muted">No fillers, no palm oil — just the ingredient that matters.</p>
+              <a href="#" class="text-link">Read more →</a>
+            </article>
+
+            <article class="blog-card">
+              <h3>Launch updates</h3>
+              <p class="muted">Where to buy, release timing, and what’s coming next.</p>
+              <a href="#" class="text-link">Read more →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div>
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <p class="section-lead">
+              Have questions or want to partner with FLEX? Send a message.
+            </p>
+
+            <div class="contact-note">
+              <strong>We reply fast.</strong> Your message goes directly to <strong>team@eatflex.uk</strong>.
+            </div>
+          </div>
+
+          <form class="form" id="contactForm">
+            <div class="form-row">
+              <label>
+                Full name
+                <input name="name" type="text" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" placeholder="email@example.com" required />
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                Country
+                <input name="country" type="text" placeholder="United Kingdom" />
+              </label>
+              <label>
+                Phone (optional)
+                <input name="phone" type="tel" placeholder="+44" />
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea name="message" rows="6" placeholder="How can we help?" required></textarea>
+            </label>
+
+            <!-- Honeypot -->
+            <input name="website" autocomplete="off" tabindex="-1" style="display:none" />
+
+            <button class="btn btn-solid btn-full" type="submit">Send message</button>
+            <p id="formStatus" class="muted" style="margin-top:10px;" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">FLEX</div>
+          <p class="muted">
+            Premium minimalist performance nutrition. Built for training days and family pantries.
+          </p>
+
+          <a
+            class="icon-btn footer-ig"
+            href="https://instagram.com/eatflex.uk"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="FLEX on Instagram"
+            title="Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm9 2h-9A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4Zm-4.5 4.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6Zm0 2a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM17.8 6.6a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-heading">Company</div>
+            <a href="#story">Our story</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-heading">Support</div>
+            <a href="#faq">FAQ</a>
+            <a href="#where-to-buy">Where to buy</a>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-heading">Legal</div>
+            <a href="privacy.html">Privacy policy</a>
+            <a href="cookies.html">Cookie policy</a>
+            <a href="terms.html">Terms of use</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div class="muted">© <span id="year"></span> FLEX. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script>
+      // Year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile nav
+      const burger = document.querySelector(".burger");
+      const mobileNav = document.querySelector(".mobile-nav");
+      burger?.addEventListener("click", () => {
+        const expanded = burger.getAttribute("aria-expanded") === "true";
+        burger.setAttribute("aria-expanded", String(!expanded));
+        mobileNav.hidden = expanded;
+      });
+      mobileNav?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          burger.setAttribute("aria-expanded", "false");
+          mobileNav.hidden = true;
+        });
+      });
+
+      // Contact form -> API Gateway
+      const API_BASE = "https://3laos9k9hb.execute-api.eu-west-2.amazonaws.com";
+      const form = document.getElementById("contactForm");
+      const statusEl = document.getElementById("formStatus");
+
+      form?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        statusEl.textContent = "Sending…";
+
+        const payload = Object.fromEntries(new FormData(form).entries());
+
+        try {
+          const res = await fetch(API_BASE.replace(/\/$/, "") + "/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok || !data.ok) throw new Error(data.error || "Failed to send.");
+
+          form.reset();
+          statusEl.textContent = "Message sent. We’ll get back to you soon.";
+        } catch (err) {
+          console.error(err);
+          statusEl.textContent = "Error sending message. Please try again.";
+        }
+      });
+    </script>
+  </body>
+</html>
