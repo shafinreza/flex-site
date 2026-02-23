@@ -441,25 +441,37 @@
 
       form?.addEventListener("submit", async (e) => {
         e.preventDefault();
-        statusEl.textContent = "Sending…";
+        if (statusEl) statusEl.textContent = "Sending…";
 
         const payload = Object.fromEntries(new FormData(form).entries());
 
         try {
           const res = await fetch(API_BASE.replace(/\/$/, "") + "/contact", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
           });
 
-          const data = await res.json().catch(() => ({}));
-          if (!res.ok || !data.ok) throw new Error(data.error || "Failed to send.");
+          // Read as text first (works whether Lambda returns JSON or plain text)
+          const text = await res.text();
+          let data = null;
+          try { data = JSON.parse(text); } catch { /* not JSON */ }
+
+          // ✅ Success rules:
+          // - HTTP 2xx is success, OR
+          // - JSON with { ok: true } is success
+          const ok = res.ok && (data?.ok !== false);
+
+          if (!ok) {
+          console.error("Contact error:", res.status, text);
+          throw new Error(data?.error || "Failed to send.");
+        }
 
           form.reset();
-          statusEl.textContent = "Message sent. We’ll get back to you soon.";
+          if (statusEl) statusEl.textContent = "Message sent. We’ll get back to you soon.";
         } catch (err) {
           console.error(err);
-          statusEl.textContent = "Error sending message. Please try again.";
+          if (statusEl) statusEl.textContent = "Error sending message. Please try again.";
         }
       });
     </script>
