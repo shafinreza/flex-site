@@ -471,7 +471,7 @@
           if (statusEl) statusEl.textContent = "Message sent. We’ll get back to you soon.";
         } catch (err) {
           console.error(err);
-          if (statusEl) statusEl.textContent = "Error sending message. Please try again.";
+          if (statusEl) statusEl.textContent = "Error: " + (err?.message || err);
         }
       });
     </script>
